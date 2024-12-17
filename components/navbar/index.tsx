@@ -1,20 +1,17 @@
 import React from "react";
 import Link from "next/link";
-interface NavItem {
-  qid: number,
-  question: string
-  answer: string
-}
-
-const Navbar = ({ questions } : any) => {
-  return  <nav className="absolute bottom-0 left-20 right-0 text-center">
+type Question = {
+  qid: number;
+};
+const Navbar = ({ questions } : { questions: Question[] }) => {
+  return  <nav className="absolute bottom-0 left-0 right-0 text-center">
             <ul className="flex text-white">
               <li className="flex flex-row space-y-4 m-6">
                 <Link key="" href='/' className="hover:text-accent">
                   Home
                 </Link>
               </li>
-              {questions.map((que: { qid: null }) => (
+              {questions.map((que: { qid: number;}) => (
                 <li key={que.qid} className="flex flex-row space-y-4 m-6">
                   <Link key={que.qid} href={`/question/${que.qid}`} className="hover:text-accent">
                   Question {que.qid}

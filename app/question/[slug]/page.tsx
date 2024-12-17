@@ -13,9 +13,7 @@ export default async function Question({
   const filePath = path.join(process.cwd(), 'public', 'data/questions.json');
   const fileContents = fs.readFile(filePath, 'utf8');
   const menuItems = JSON.parse(await fileContents);
-  const question = menuItems.find((q : any) => q.qid.toString() === slug);
-  const answer = question.answer;
-  
+  const question = menuItems.find((q: { qid: number;question: string; answer:string}) => q.qid == slug);
   return (
   <div className="bg-black">
   <main className="min-h-screen p-6 text-white">
