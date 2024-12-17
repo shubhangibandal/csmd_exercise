@@ -1,0 +1,42 @@
+[
+    {
+        "qid" : 1,
+        "question": "A customer has come to you to ask about the difference between React and Next.js and what the benefits are of using Next.js for her team. Please write a response to the customer?",
+        "answer":  "Test"  
+    },
+    {
+        "qid" : 2,
+        "question": "A customer has reached out asking, “When should I choose to use Edge Functions, Serverless Functions, or Edge Middleware with Vercel?” Please write a reply to the customer.",
+        "answer":  "Test"
+    },
+    {
+        "qid" : 3,
+        "question": "An Enterprise customer has written in asking about ongoing unexpected usage invoices for the last 6 months and threatens to move their services to the AWS platform if overages are not forgiven immediately. Please write a response to the customer.",
+        "answer": ""
+    },
+    {
+        "qid" : 4,
+        "question": "A customer who has been sold Vercel through a reseller called Sitecore has reached out to the team to ask about the product. Can you give a brief 2-5 sentence introduction to Vercel to showcase what Vercel does?",
+        "answer": ""
+    },
+    {
+        "qid" : 5,
+        "question": "An Enterprise customer is just getting started with Vercel and has questions about recommended options for third-party integrations for Monitoring or Logging and best practices when it comes to observability. How would you respond to the customer?",
+        "answer": ""
+    },
+    {
+        "qid" : 6,
+        "question": "An Enterprise customer, new to Next.js and Vercel, asks about a high usage bill regarding fast origin transfer and fast data transfer. They have two questions:",
+        "answer": ""
+    },
+    {
+        "qid" : 7,
+        "question": "What resources would you want to prepare to make sure that the CISO of a newly signed Enterprise customer has everything they need to succeed as they migrate to the Enterprise version of the platform? Feel free to use documentation from vercel.com, and our YouTube channel to find assets to help.",
+        "answer": ""
+    },
+    {
+        "qid" : 8,
+        "question": "How could we improve or alter this familiarization exercise?",
+        "answer": ""
+    }
+]

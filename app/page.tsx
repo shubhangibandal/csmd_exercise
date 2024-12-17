@@ -1,101 +1,58 @@
+"use client"
 import Image from "next/image";
-
+import Navbar from "../components/navbar";
+import { useEffect, useState } from 'react'
+interface NavItem {
+  qid: number,
+  question: string
+  answer: string
+}
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [menuItems, setMenuItems] = useState<NavItem[]>([])
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+  useEffect(() => {
+    async function fetchMenuData() {
+      const response = await fetch('data/questions.json')
+      const data = await response.json()
+      setMenuItems(data)
+    }
+    fetchMenuData()
+  }, [])
+  return (
+    <div className="bg-black text-white">
+      <main className="flex min-h-screen flex-col p-6">
+        <div className="flex flex-row ml-60 mt-20 items-center w-96">
+          <div className="text-center min-h-fit border-2 border-white min-w-80 pt-10 pb-10">
+              <Image
+              className="ml-20 rounded-full"
+              src="/profile.jpeg"
+              alt="Profile Pic"
+              width={120}
+              height={100}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <h2 className="font-extrabold mt-2">Shubhangi Bandal</h2>
+            <p>10 Years experience</p>
+            <p>Front End Developer</p>
+            <p>Next.js | Devops | Cloud</p>
+          </div>
+          <div className=" min-h-fit border-2 border-white ml-80 mr-10 min-w-80 pl-6 pr-2 pb-10 pt-10">
+            <Image
+              className="text-center"
+              src="/next.svg"
+              alt="Next.js logo"
+              width={180}
+              height={38}
+            />
+            <h4 className="font-extrabold from-neutral-300 mt-4">Design approach for Assigment</h4>
+            <p className="pl-2"> - Dynamic App routing to generate question page </p>
+            <p className="pl-2"> - Question and answer rendered from json file </p>
+            <h4 className="font-extrabold from-neutral-300 mt-4">Referances</h4>
+            <p className="pl-2"> - https://nextjs.org/docs</p>
+            <p className="pl-2"> - https://tailwindcss.com/</p>
+          </div>
         </div>
+        <Navbar questions={menuItems}></Navbar>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
