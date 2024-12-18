@@ -23,3 +23,11 @@ body {
 h2 {
    font-size: bold;
 }
+.qanswer ul {
+  list-style: disc;
+  padding: 20px 50px;
+}
+.qanswer ol{
+  list-style: decimal; 
+  padding: 20px 50px;
+}

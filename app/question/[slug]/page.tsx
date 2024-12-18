@@ -19,20 +19,20 @@ export default async function Question({
   <div className="bg-black">
   <main className="flex flex-col p-6 text-white">
           <div className="text-white pl-80 pr-80 pt-0 pb-20 mb-20 flex h-[85vh] w-full flex-col overflow-auto">
-            <h2 className="font-extrabold mt-2">Question {slug} </h2>
+            <h2 className="font-extrabold text-2xl mt-2 mb-2">Question {slug} </h2>
             <div className='pt-5'>
               {question.question}
             </div>
-            <div className='pt-5'>
-            <h2 className="font-extrabold mt-2">Answer : </h2>
+            <div className='pt-5 qanswer'>
+            <h2 className="font-extrabold text-2xl mt-2 mb-2">Answer : </h2>
                 <div className="product-des" dangerouslySetInnerHTML={{ __html: question.answer }} />
             </div>
             {question.ref && (
             <div>
-            Reference : 
-            <Link href={`${question.ref}`} target="_blank" className="hover:text-accent">
-                {question.ref}
-            </Link>
+              <h2 className="font-extrabold text-1xl mt-2 mb-2">Reference: </h2>
+              <Link href={`${question.ref}`} target="_blank" className="hover:text-accent">
+                  {question.ref}
+              </Link>
             </div>
             )}
           </div>
