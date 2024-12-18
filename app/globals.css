@@ -31,3 +31,11 @@ h2 {
   list-style: decimal; 
   padding: 20px 50px;
 }
+.qanswer ul.level2 {
+  padding-left: 70px;;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+p.spacing40 {
+  margin-left: 40px;
+}
