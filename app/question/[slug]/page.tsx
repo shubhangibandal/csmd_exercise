@@ -27,14 +27,6 @@ export default async function Question({
             <h2 className="font-extrabold text-2xl mt-2 mb-2">Answer : </h2>
                 <div className="product-des" dangerouslySetInnerHTML={{ __html: question.answer }} />
             </div>
-            {question.ref && (
-            <div>
-              <h2 className="font-extrabold text-1xl mt-2 mb-2">Reference: </h2>
-              <Link href={`${question.ref}`} target="_blank" className="hover:text-accent">
-                  {question.ref}
-              </Link>
-            </div>
-            )}
           </div>
           <Navbar questions={menuItems}></Navbar>
         </main>

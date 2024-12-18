@@ -49,6 +49,7 @@ export default function Home() {
             <h4 className="font-extrabold from-neutral-300 mt-4">Referances</h4>
             <p className="pl-2"> - https://nextjs.org/docs</p>
             <p className="pl-2"> - https://tailwindcss.com/</p>
+            <p className="pl-2"> - https://vercel.com/docs</p>
           </div>
         </div>
         <Navbar questions={menuItems}></Navbar>
