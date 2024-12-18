@@ -19,9 +19,9 @@ export default function Home() {
     fetchMenuData()
   }, [])
   return (
-    <div className="bg-black text-white">
-      <main className="flex min-h-screen flex-col p-6">
-        <div className="flex flex-row ml-60 mt-20 items-center w-96">
+    <div className="text-white justify-center">
+      <main className="flex min-h-screen flex-col p-6 m-10">
+        <div className="flex flex-row ml-60 mt-20 w-96">
           <div className="text-center min-h-fit border-2 border-white min-w-80 pt-10 pb-10">
               <Image
               className="ml-20 rounded-full"

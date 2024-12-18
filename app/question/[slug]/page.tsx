@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import Navbar from "@/components/navbar";
+import Link from "next/link";
 
 export default async function Question({
   params,
@@ -16,8 +17,8 @@ export default async function Question({
   const question = menuItems.find((q: { qid: number;question: string; answer:string}) => q.qid == slug);
   return (
   <div className="bg-black">
-  <main className="min-h-screen p-6 text-white">
-          <div className="text-white pl-80 pr-80 pt-0">
+  <main className="flex flex-col p-6 text-white">
+          <div className="text-white pl-80 pr-80 pt-0 pb-20 mb-20 flex h-[85vh] w-full flex-col overflow-auto">
             <h2 className="font-extrabold mt-2">Question {slug} </h2>
             <div className='pt-5'>
               {question.question}
@@ -26,7 +27,14 @@ export default async function Question({
             <h2 className="font-extrabold mt-2">Answer : </h2>
                 <div className="product-des" dangerouslySetInnerHTML={{ __html: question.answer }} />
             </div>
-           
+            {question.ref && (
+            <div>
+            Reference : 
+            <Link href={`${question.ref}`} target="_blank" className="hover:text-accent">
+                {question.ref}
+            </Link>
+            </div>
+            )}
           </div>
           <Navbar questions={menuItems}></Navbar>
         </main>

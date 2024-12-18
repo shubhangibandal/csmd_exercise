@@ -1,28 +1,33 @@
 [
     {
         "qid" : 1,
+        "ref": "",
         "question": "A customer has come to you to ask about the difference between React and Next.js and what the benefits are of using Next.js for her team. Please write a response to the customer?",
-        "answer":  "Test"  
+        "answer": ["<p>Hi Christy,<br> I hope this email finds you well! I wanted to provide you with some insights into the differences between React and Next.js, as well as the potential benefits Next.js could offer for your team<br> React vs. Next.js: Key Differences<br> React is a JavaScript library for building user interfaces, focusing on the view layer. It requires additional tools for features like routing, server-side rendering (SSR), and static site generation (SSG).<br> Next.js is a React framework that simplifies and accelerates the development of production-ready web applications by providing built-in features like routing, SSR, and SSG.<br> Few below features of Next.js could be game changer for your team such as: <br> <strong> Enhanced Performance and SEO:</strong> Next.js supports SSR and SSG, which deliver pre-rendered content directly to users and search engines<br> <strong> Built-In Features : </strong> Like file-based routing system and APIs for server-side functionality, eliminating the need for extra libraries<br> <strong> Full-Stack Capabilities : </strong> With built-in API routes, Next.js enables backend logic within the same framework, reducing complexity and streamlining development.<br> <strong> Developer Productivity :</strong> hot reloading, automatic code splitting, and minimal configuration ensure faster development cycles and fewer setup headaches.<br> <strong> Seamless Integration : </strong> If your team uses react.js already, adopting next.js is seamless for them.<br> If your team is considering Next.js, I&rsquo;d be happy to discuss specific use cases or help explore how its features align with your product&rsquo;s goals. I can also share examples of successful implementations from other teams or industries.<br> Let me know if you&rsquo;d like to set up a time to discuss this further or if there&rsquo;s any additional information I can provide!<br> <\/p>"]
     },
     {
         "qid" : 2,
+        "ref" : "https://www.youtube.com/watch?v=whn2o0LlJyA",
         "question": "A customer has reached out asking, “When should I choose to use Edge Functions, Serverless Functions, or Edge Middleware with Vercel?” Please write a reply to the customer.",
-        "answer":  "Test"
+        "answer": ["<p>Hi Trevor,<br>  Thank you for reaching out! It&rsquo;s exciting to hear about your work at the winery and your use of Next.js and Statsig for personalization applications.<br>  Let me share how you can achieve a geolocation based platform.<br>  Geolocation using edge middleware : <br>  I. Restrict alcohol delivery: Detect user's country\/state in edge middleware logic code <br>  II. Dynamically customize that content \/ message : redirect user to different page.<\/p>    <p>Real-Time Personalization with Edge Functions : <br>  I. Displaying location-specific promotions (e.g., a sale only available in certain regions).<br>  II. Adjusting product availability based on local regulations in real time.<\/p>    <p> <br> If you&rsquo;d like, I can share code samples or help you set up a POC to showcase how Edge Middleware and Functions can enhance your personalization efforts. Feel free to reach out to us.<br>  <\/p>"]
     },
     {
         "qid" : 3,
+        "ref" : "",
         "question": "An Enterprise customer has written in asking about ongoing unexpected usage invoices for the last 6 months and threatens to move their services to the AWS platform if overages are not forgiven immediately. Please write a response to the customer.",
-        "answer": ""
+        "answer": ["<p>Hi Leonardo,<br>Thank you for bringing this to our attention. I completely understand how unexpected usage invoices can be frustrating, especially when working within a set budget. Your partnership with us is incredibly important, and I&rsquo;m here to help resolve this issue and find a solution that works for you.<br>First, let&rsquo;s address the overages:<br>I&rsquo;d like to investigate your account further to identify what might be causing the higher-than-expected usage and ensure there are no billing anomalies. Could you confirm if your application usage patterns have changed recently, or if you&rsquo;re noticing any unexpected spikes in customer activity?<br>Second, let&rsquo;s work toward a resolution:<br>I&rsquo;ll collaborate with our billing and support teams to determine What best can be done from our end.<br>I&rsquo;d also like to explore options for optimizing your current usage to help reduce costs moving forward. For example, caching strategies, better resource management, or adjusting your plan might help.<br>Please allow me a bit of time to look into the details, and I&rsquo;ll get back to you with insights and potential next steps within the next few business days.<br>We value the work you&rsquo;re doing and would love to ensure Vercel continues to be the best platform for your needs. I&rsquo;m confident we can find a path forward together, and I&rsquo;ll personally ensure this is prioritized.<br>Steps to Triage the Issue : <br>Review Billing History with billing team: <br>Check Leonardo&rsquo;s usage patterns for the last 6 months to identify trends, spikes, or anomalies <br>Compare usage against the current plan limits and ensure the invoices align with the data.<br>Support\/Technical Team: <br>Identify any inefficiencies in resource usage, like overuse of functions or uncached content.<br>  <br>Identify what components (e.g., bandwidth, build minutes, edge function invocations) are driving the overages.<br>Cross-check if the usage spikes align with changes in the customer&rsquo;s platform activity or traffic.<\/p><br><p>Check with customers if any traffic changes on site. Or any new function deployment.<br>Prepare a proposal solution accordingly<\/p>"]
     },
     {
         "qid" : 4,
+        "ref" : "",
         "question": "A customer who has been sold Vercel through a reseller called Sitecore has reached out to the team to ask about the product. Can you give a brief 2-5 sentence introduction to Vercel to showcase what Vercel does?",
-        "answer": ""
+        "answer": ["<p>Hi Clara,<br>Thank you for reaching out! Vercel is a platform that makes it easy to build, deploy, and manage high-performance websites and web applications. It&rsquo;s designed to deliver fast, reliable, and scalable web experiences by hosting your website on a global network, ensuring content is delivered to users quickly, no matter where they are.<br> Let us know how we can help further&mdash;whether it's setting up your site or assisting with any specific needs for Acme University<\/p>"]
     },
     {
         "qid" : 5,
+        "ref" : "",
         "question": "An Enterprise customer is just getting started with Vercel and has questions about recommended options for third-party integrations for Monitoring or Logging and best practices when it comes to observability. How would you respond to the customer?",
-        "answer": ""
+        "answer": ["<p>Hi Evelyn,<br>Welcome to Vercel! It&rsquo;s great to see your team getting started, and I&rsquo;d be happy to provide guidance on third-party integrations for monitoring and logging, as well as best practices for observability.<br>You can utilize few tools such as<br>Monitoring : New relic , Datadog for monitoring or you can leverage Vercel Analytics. <br>Logging: Logflare , AWS CloudWatch collect and analyze the logs from your application.<br>Error Tracking: Sentry or Bugsnag helps in resolving application errors quickly.<\/p><br><p>Let me know if you&rsquo;d like assistance setting up any of these integrations or if you have specific needs we can help address that. We're here to ensure your team&rsquo;s pages are reliable and performant for all users.<\/p>"]
     },
     {
         "qid" : 6,
@@ -31,12 +36,14 @@
     },
     {
         "qid" : 7,
+        "ref" : "https://vercel.com/docs/security",
         "question": "What resources would you want to prepare to make sure that the CISO of a newly signed Enterprise customer has everything they need to succeed as they migrate to the Enterprise version of the platform? Feel free to use documentation from vercel.com, and our YouTube channel to find assets to help.",
-        "answer": ""
+        "answer": ["<p>To ensure Ty, the CISO of a Fortune 500 firm, has everything needed to succeed with the Enterprise version of Vercel. Below are the steps and resources to prepare:<\/p><br><p>1. Custom Firewall Rules<br>Users can configure custom firewall rules to control access to their applications, such as blocking specific IP addresses or geolocations.<br>2. Single Sign-On (SSO)<br>Enterprise users can integrate SSO via identity providers such as Okta, Google Workspace, and others to ensure secure user authentication.<br>3. DDoS Protection<br>Vercel's platform includes built-in Distributed Denial of Service (DDoS) protection to mitigate potential attacks on your applications.<br>4. Compliance Certifications<br>Vercel is compliant with major security standards, including:<br>SOC 2 Type II: Ensures that Vercel maintains robust security, availability, and confidentiality controls.<br>GDPR: Vercel is compliant with the General Data Protection Regulation, ensuring data privacy for EU users.<br>ISO 27001 (for Enterprise customers): Ensures information security management systems (ISMS) are in place.<br>5. HTTPS by Default<br>All Vercel deployments automatically use HTTPS with TLS encryption to ensure secure data transmission between clients and servers.<br>6. Custom Domains with SSL<br>Vercel provides automatic SSL certificates for custom domains using Let's Encrypt, ensuring all custom domains are secured with HTTPS.<br>7. Role-Based Access Control (RBAC)<br>Teams on Vercel can implement role-based access controls to define user permissions and restrict access to sensitive resources or administrative actions.<br>8. Edge Network Security<br>Vercel's global edge network secures applications against potential vulnerabilities and reduces latency through geographically distributed servers. Also please go through the security documentation from vercel.com<br><\/p>"]
     },
     {
         "qid" : 8,
+        "ref" : "",
         "question": "How could we improve or alter this familiarization exercise?",
-        "answer": ""
+        "answer": ["<p>Few of the following suggestion for improvising exercise : <br> 1. Maybe provide more scenarios on questions.<br>2. Questions regarding internal (billing\/ support\/ technical) team collaboration.<br>3. Few questions regarding CSM related metrics like ARR, churn rate, health score.<br>4. Questions regarding technology trends and feature changes into products.<\/p>"]
     }
 ]

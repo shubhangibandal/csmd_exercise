@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -28,22 +29,26 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="flex flex-row bg-black pt-10">
-          <div className="text-white w-1/2 items-center justify-center flex flex-row">
-            Digital success take home assignment
+        <div className="flex flex-col justify-center bg-black text-white">
+        <header className="flex flex-row m-auto w-full">
+          <div className="w-1/2 p-5 pl-80">
+            <Link key="" href='/' className="hover:text-accent font-extrabold text-lg">
+              Digital success take home assignment
+            </Link>
           </div>
-          <div className="text-white w-1/2 pl-40 flex flex-row">
-            <p>By</p>
+          <div className="w-1/2 p-5 pl-60 flex flex-row font-extrabold text-lg">
+            <div>By</div>
             <Image
                     src="/vercel.svg"
                     alt="Vercel logomark"
                     width={20}
                     height={20}
                   />
-            <p>Vercel</p>
+            <div>Vercel</div>
         </div>
         </header>
         {children}
+        </div>
       </body>
     </html>
   );

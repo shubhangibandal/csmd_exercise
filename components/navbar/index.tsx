@@ -4,8 +4,8 @@ type Question = {
   qid: number;
 };
 const Navbar = ({ questions } : { questions: Question[] }) => {
-  return  <nav className="absolute bottom-0 left-0 right-0 text-center">
-            <ul className="flex text-white">
+  return  <nav className="absolute bottom-0 left-20 right-0 text-center">
+            <ul className="flex text-white ml-10">
               <li className="flex flex-row space-y-4 m-6">
                 <Link key="" href='/' className="hover:text-accent">
                   Home
