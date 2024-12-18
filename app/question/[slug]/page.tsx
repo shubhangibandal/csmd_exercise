@@ -1,7 +1,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import Navbar from "@/components/navbar";
-import Link from "next/link";
 
 export default async function Question({
   params,
